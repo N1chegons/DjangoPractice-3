@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="{% static 'main/main.css' %}" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+   
+   <div class="header">
+
+      <div class="container">
+         <div class="header_top">
+            <div class="nav">
+              
+               <div class="nav_logo">
+               
+                  <h2 class="logo"><a href="#"></a>GoTrip</h2>
+               
+               </div>
+
+               <ul class="nav_list">
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+               
+               
+               <ul class="nav_login"> 
+                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#" class="header_btn">Login</a></li>
+               </ul>
+
+
+            </div>
+         </div>
+
+         <div class="header_row">
+            <div class="header_content">
+               <div class="header_bage">exsplore the world</div>
+               <h1 class="header_title">Explore The Natural Beauty Of Halmahera With Us</h1>
+               <div class="header_text">explore the beauty of god's earth in a beautiful forest and have fun</div>
+               <a href ='#' class="btn">Exsplore Now</a>
+            </div>
+         
+            <div class="hedaer_img">
+               <img src="{% static 'main/img/header-img.png' %}" alt="images-girl" style="
+               max-width: unset;
+               width: 517px;
+               height: 851px;
+           ">
+            </div>
+         </div>
+      </div>
+
+   </div>
+   {% block content %}
+
+   <main>
+
+      <section class="destinations">
+         <div class="container-right">
+
+            <div class="destinations_row">
+
+               <div class="destinations_content">
+                  <h2 class="destinations_title">
+                     <span>Choice Of </span>
+                  Destinations
+
+                  </h2>
+
+                  <div class="destinations_text">
+                    <p>explore the beauty of god's earth in a beautiful forest and have fun</p> 
+                  </div>
+
+                  <a href="#" class="btn">Exsplore Now</a>
+                  
+                  
+
+               </div>
+
+
+              
+               <div class="destinations_slider">
+                 
+                  <div class="slider">
+
+                     <div class="owl-carousel">
+                        <img class="slider-item" src="{% static 'main/img/01.jpg' %}" alt="">
+                        <img class="slider-item" src="{% static 'main/img/02.jpg' %}" alt="">
+                        <img class="slider-item" src="{% static 'main/img/03.jpg' %}" alt="">
+                     </div>
+                     <button class="slider_btn slider_btn--prev">
+                        <img src="{% static 'main/img/left-arr.svg' %}" alt="">
+                     </button>
+                     <button class="slider_btn slider_btn--next">
+                        <img src="{% static 'main/img/right-arr.svg' %}" alt="">
+                     </button>
+                  </div>
+
+               </div>
+
+
+            </div>
+
+
+         </div>
+      </section>
+
+   </main>
+  {& endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="{% static 'main/main.js' %}"></script>
+</body>
+</html>
